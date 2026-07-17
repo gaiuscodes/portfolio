@@ -3,146 +3,232 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Timothy Gaius | Portfolio</title>
+  <meta name="description" content="Timothy Gaius — Software Engineer & Developer building clean, scalable web applications." />
+  <title>Timothy Gaius | Software Engineer</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="style.css" />
-   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-                   
 </head>
 <body>
 
   <!-- ===== NAVIGATION ===== -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#education" class="nav-link">Education</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#home" class="nav-brand">Tim<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <!-- ===== HEADER ===== -->\
-   
-            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-  <header class="hero-header">
-    <div class="hero-content">
-      <h1 class="animate-name">Timothy <span>Gaius</span></h1>
-      <p class="animate-title">Junior Web Developer</p>
-      <a href="#projects" class="btn-primary animate-btn">View My Work</a>
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="home">
+    <div class="hero-bg">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
     </div>
-    <div class="scroll-indicator"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">Timothy <span>Gaius</span></h1>
+      <h2 class="hero-role">
+        <span class="hero-role-static">I'm a&nbsp;</span>
+        <span class="typed" id="typed"></span><span class="caret">|</span>
+      </h2>
+      <p class="hero-tagline reveal">
+        Software Engineer crafting fast, accessible, and scalable web applications —
+        from clean frontends to robust backend systems.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="downloads/TimothyGaius_CV.pdf" class="btn btn-ghost" download>Download CV</a>
+      </div>
+      <div class="hero-social reveal">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down"><span></span></a>
   </header>
 
-  <!-- ===== ABOUT ME ===== -->
-  <section id="about" class="about-section fade-slide">
-    <div class="about-container">
-      <div class="about-image">
-        <img src="images/timothy.jpg" 
-             alt="Timothy Gaius"
-             onerror="this.src='https://via.placeholder.com/220x220.png?text=Timothy+Gaius';">
-      </div>
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>A passionate <strong>tech enthusiast</strong> transitioning into web development. My drive is fueled by turning <strong>innovative ideas</strong> into impactful solutions.</p>
-        <p>With a background in <strong>Business and IT</strong>, I blend creativity, structure, and problem‑solving to craft <strong>clean, user‑focused experiences</strong>.</p>
-        <p>Currently honing my skills in <strong>Software Engineering</strong> through the <span class="highlight">Power Learn Project Africa</span>.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== EDUCATION ===== -->
-  <section id="education" class="education-section fade-slide">
-    <h2 class="section-title">Education</h2>
-    <ul>
-      <li><strong>Business and Information Technology</strong> – St. Paul University (Graduated: 2022)</li>
-      <li><strong>Software Engineering</strong> – Power Learn Project Africa (Present)</li>
-    </ul>
-    <a href="downloads/TimothyGaius_CV.pdf" class="btn-download" download>Download My CV</a>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="projects-section fade-slide">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Brief description of project 1. Key features and tools used.</p>
-        <a href="https://github.com/yourusername/project1" class="project-link" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Brief description of project 2. Key features and tools used.</p>
-        <a href="https://github.com/yourusername/project2" class="project-link" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-  </section>
- <!-- ===== SKILLS ===== -->
-<section id="skills" class="skills-section fade-slide">
-  <h2 class="section-title">Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-      <p>HTML5</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-      <p>CSS3</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-      <p>JavaScript</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-      <p>PHP</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-      <p>MySQL</p>
-    </div>
-  </div>
-</section>
-
-
-  <!-- ===== CONTACT ME ===== -->
-  <section id="contact" class="contact-section fade-slide">
-    <h2>Contact Me</h2>
-    <p class="contact-intro">Let’s connect! Fill the form below to reach out for collaborations or opportunities.</p>
-    <div class="contact-container">
-      <form action="contact.php" method="POST" class="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+  <main>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about-photo reveal">
+          <div class="photo-frame">
+            <img src="images/timothy.jpg"
+                 alt="Timothy Gaius"
+                 onerror="this.src='https://ui-avatars.com/api/?name=Timothy+Gaius&size=320&background=0d1117&color=58a6ff';" />
+          </div>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+        <div class="about-text reveal">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            I'm a <strong>Software Engineer / Developer</strong> who turns ideas into
+            reliable, well-architected products. I care about clean code, performance,
+            and user experience across the full stack.
+          </p>
+          <p>
+            With a background in <strong>Business &amp; Information Technology</strong> and ongoing
+            training in <strong>Software Engineering</strong> through the Power Learn Project Africa,
+            I blend structured problem-solving with pragmatic delivery.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-num" data-target="12">0</span><span class="stat-plus">+</span>
+              <p>Projects Shipped</p>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+              <p>Years Learning</p>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="15">0</span><span class="stat-plus">+</span>
+              <p>Tech Skills</p>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Skills &amp; Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
+          <div class="skill-card reveal"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+          <div class="skill-card reveal"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+          <div class="skill-card reveal"><i class="devicon-php-plain colored"></i><p>PHP</p></div>
+          <div class="skill-card reveal"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
+          <div class="skill-card reveal"><i class="devicon-git-plain colored"></i><p>Git</p></div>
+          <div class="skill-card reveal"><i class="devicon-bootstrap-plain colored"></i><p>Bootstrap</p></div>
+          <div class="skill-card reveal"><i class="devicon-vscode-plain colored"></i><p>VS Code</p></div>
         </div>
-        <button type="submit" class="btn-submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio built with semantic HTML, modern CSS animations, and vanilla JavaScript interaction.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>Contact Manager (PHP)</h3>
+            <p>A full-stack contact form with PHP backend and MySQL storage, featuring server-side validation and status feedback.</p>
+            <ul class="tags"><li>PHP</li><li>MySQL</li><li>HTML</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>Task Tracker</h3>
+            <p>A client-side task management app with localStorage persistence, filtering, and a clean accessible UI.</p>
+            <ul class="tags"><li>JavaScript</li><li>CSS</li><li>LocalStorage</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE / EDUCATION ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Education &amp; Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <h3>Software Engineering</h3>
+              <p class="timeline-meta">Power Learn Project Africa &middot; Present</p>
+              <p>Intensive full-stack engineering training — building real-world applications and engineering best practices.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <h3>Business &amp; Information Technology</h3>
+              <p class="timeline-meta">St. Paul University &middot; Graduated 2022</p>
+              <p>Foundations in IT systems, business analysis, and software fundamentals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <p class="contact-intro reveal">
+          Have a project, role, or collaboration in mind? Drop me a message and I'll get back to you.
+        </p>
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " required />
+            <label for="name">Name</label>
+            <span class="error" data-for="name"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " required />
+            <label for="email">Email</label>
+            <span class="error" data-for="email"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+            <span class="error" data-for="message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>©Tim Gaius.Codes by coffee</p>
-    <div class="social-links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-      <a href="mailto:your.email@example.com">Email</a>
+    <div class="container footer-inner">
+      <p>Designed &amp; built by Timothy Gaius</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Tim Gaius. All rights reserved.</p>
     </div>
   </footer>
-  
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          
-            <i class="devicon-php-plain colored"></i>
 
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="main.js"></script>
 </body>
 </html>
