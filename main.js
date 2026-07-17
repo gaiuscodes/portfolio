@@ -151,8 +151,15 @@
     const data = new FormData(form);
 
     try {
-      const res = await fetch('contact.php', { method: 'POST', body: data });
-      const json = await res.json().catch(() => ({}));
+      // Prefer Vercel serverless endpoint; fall back to PHP on local/other hosts.
+      let res, json;
+      try {
+        res = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(Object.fromEntries(data)) });
+        json = await res.json().catch(() => ({}));
+      } catch (e) {
+        res = await fetch('contact.php', { method: 'POST', body: data });
+        json = await res.json().catch(() => ({}));
+      }
       if (res.ok && json.status === 'success') {
         status.textContent = `Thanks, ${form.name.value.trim()}! Your message has been sent.`;
         status.className = 'form-status ok';
