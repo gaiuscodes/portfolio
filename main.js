@@ -308,4 +308,26 @@
   }
 
   loadGitHubStats();
+
+  /* ---- Projects Modal ---- */
+  const viewMoreBtn = document.getElementById('viewMoreBtn');
+  const projectsModal = document.getElementById('projectsModal');
+  const closeModal = document.getElementById('closeModal');
+
+  if (viewMoreBtn && projectsModal && closeModal) {
+    viewMoreBtn.addEventListener('click', () => {
+      projectsModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+    closeModal.addEventListener('click', () => {
+      projectsModal.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    projectsModal.addEventListener('click', (e) => {
+      if (e.target === projectsModal) {
+        projectsModal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    });
+  }
 })();

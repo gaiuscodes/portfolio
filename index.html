@@ -286,8 +286,65 @@
             <ul class="tags"><li>Next.js</li><li>Framer Motion</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
           </article>
         </div>
+        <div class="projects-more reveal">
+          <button class="btn btn-ghost" id="viewMoreBtn">View More Projects</button>
+        </div>
       </div>
     </section>
+
+    <!-- ===== MORE PROJECTS MODAL ===== -->
+    <div class="modal-overlay" id="projectsModal">
+      <div class="modal-content">
+        <button class="modal-close" id="closeModal" aria-label="Close">&times;</button>
+        <h2 class="modal-title reveal">More Projects</h2>
+        <div class="modal-projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>Enterprise ERP System</h3>
+            <p>Full-stack enterprise resource planning system for manufacturing operations. Includes inventory management, production scheduling, procurement, and financial reporting.</p>
+            <ul class="tags"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>Docker</li><li>AWS</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>AI Chatbot Assistant</h3>
+            <p>Intelligent customer support chatbot with natural language processing, context-aware responses, and integration with multiple communication channels.</p>
+            <ul class="tags"><li>Python</li><li>OpenAI API</li><li>FastAPI</li><li>Docker</li><li>Redis</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>CI/CD Pipeline Automation</h3>
+            <p>End-to-end CI/CD pipeline with automated testing, Docker image building, and deployment to Kubernetes clusters. Reduced deployment time by 70%.</p>
+            <ul class="tags"><li>GitHub Actions</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>Shell</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>Real-Time Analytics Dashboard</h3>
+            <p>Business intelligence dashboard with real-time data visualization, custom reporting, and role-based access control for enterprise users.</p>
+            <ul class="tags"><li>React</li><li>D3.js</li><li>Node.js</li><li>PostgreSQL</li><li>WebSockets</li></ul>
+          </article>
+        </div>
+      </div>
+    </div>
 
     <!-- ===== CASE STUDIES ===== -->
     <section id="case-studies" class="section">
