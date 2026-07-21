@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Timothy Gaius — Software Engineer & Developer building clean, scalable web applications." />
+  <title>Timothy Gaius | Software Engineer</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">Tim<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#case-studies" class="nav-link">Case Studies</a>
+        <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+        <a href="../index.html#blog" class="nav-link">Blog</a>
+        <a href="../index.html#github-stats" class="nav-link">GitHub</a>
+        <a href="../index.html#certifications" class="nav-link">Certifications</a>
+        <a href="../index.html#experience" class="nav-link">Experience</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a href="../index.html#blog" class="blog-back">&larr; Back to Articles</a>
+        <article class="blog-post">
+          <span class="blog-date">Jun 10, 2026</span>
+          <h1 class="blog-post-title">Why Every Developer Should Learn Linux</h1>
+          <div class="blog-post-meta">Linux • Productivity • Systems</div>
+
+          <p>Linux powers the internet. From the servers hosting your applications to the containers running your microservices, understanding Linux is no longer optional for professional developers — it's essential.</p>
+
+          <h2>1. The Web Runs on Linux</h2>
+          <p>Over 90% of cloud servers run Linux. When you deploy to AWS, DigitalOcean, or Vercel, you're deploying to Linux. Knowing how to navigate the filesystem, manage processes, and read logs directly on a server transforms you from someone who waits for Ops to someone who solves problems independently.</p>
+
+          <h2>2. Shell Productivity</h2>
+          <p>The Unix philosophy — small tools that do one thing well — is incredibly powerful. <code>grep</code>, <code>awk</code>, <code>sed</code>, <code>find</code>, and <code>curl</code> let you manipulate data and interact with systems faster than any GUI. Spend a week mastering the shell and you'll never look at file management the same way.</p>
+
+          <h2>3. Understanding How Software Runs</h2>
+          <p>When you understand Linux, you understand context switching, memory management, file descriptors, and process signals. This knowledge makes debugging production issues less mysterious. When your Node.js app crashes with <code>EADDRINUSE</code>, you know to check running processes with <code>lsof</code> or <code>ss</code>.</p>
+
+          <h2>4. Containers and Virtualization</h2>
+          <p>Docker, Kubernetes, and Podman all build on Linux kernel features — namespaces, cgroups, and union filesystems. Without understanding Linux, containers feel like magic. With Linux knowledge, you understand exactly what's happening when you run <code>docker run</code>.</p>
+
+          <h2>5. Career Advantage</h2>
+          <p>DevOps, SRE, backend, and infrastructure roles all require Linux fluency. Even frontend developers benefit — understanding your deployment environment makes you a more complete engineer. Linux literacy signals that you can operate in real production environments, not just local development.</p>
+
+          <p>Start with the basics: navigate with <code>cd</code>, list with <code>ls</code>, read with <code>cat</code>, and search with <code>grep</code>. Install WSL or spin up a Linux VM. The investment pays off immediately and compounds throughout your career.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by Timothy Gaius</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Tim Gaius. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="../main.js"></script>
+</body>
+</html>

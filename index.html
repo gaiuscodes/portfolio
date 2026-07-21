@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Timothy Gaius — Software Engineer & Developer building clean, scalable web applications." />
   <title>Timothy Gaius | Software Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css" />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="style.css" />
@@ -25,6 +25,11 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#projects" class="nav-link">Projects</a>
+        <a href="#case-studies" class="nav-link">Case Studies</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#github-stats" class="nav-link">GitHub</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
         <a href="#experience" class="nav-link">Experience</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
@@ -68,7 +73,7 @@
       <div class="container about">
         <div class="about-photo reveal">
           <div class="photo-frame">
-            <img src="images/timothy.jpg"
+            <img src="images/timm.png"
                  alt="Timothy Gaius"
                  onerror="this.src='https://ui-avatars.com/api/?name=Timothy+Gaius&size=320&background=0d1117&color=58a6ff';" />
           </div>
@@ -76,14 +81,12 @@
         <div class="about-text reveal">
           <h2 class="section-title">About Me</h2>
           <p>
-            I'm a <strong>Software Engineer / Developer</strong> who turns ideas into
-            reliable, well-architected products. I care about clean code, performance,
-            and user experience across the full stack.
-          </p>
-          <p>
-            With a background in <strong>Business &amp; Information Technology</strong> and ongoing
-            training in <strong>Software Engineering</strong> through the Power Learn Project Africa,
-            I blend structured problem-solving with pragmatic delivery.
+            I am a <strong>Full Stack Software Engineer</strong> passionate about
+            building reliable software that solves real business challenges.
+            My experience spans enterprise web applications, business management
+            systems, cloud infrastructure, DevOps automation, AI assistants,
+            and e-commerce platforms. I enjoy transforming ideas into scalable
+            digital products while ensuring performance, security, and maintainability.
           </p>
           <div class="stats">
             <div class="stat">
@@ -107,16 +110,78 @@
     <section id="skills" class="section">
       <div class="container">
         <h2 class="section-title reveal">Skills &amp; Technologies</h2>
-        <div class="skills-grid">
-          <div class="skill-card reveal"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
-          <div class="skill-card reveal"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
-          <div class="skill-card reveal"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
-          <div class="skill-card reveal"><i class="devicon-php-plain colored"></i><p>PHP</p></div>
-          <div class="skill-card reveal"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
-          <div class="skill-card reveal"><i class="devicon-git-plain colored"></i><p>Git</p></div>
-          <div class="skill-card reveal"><i class="devicon-bootstrap-plain colored"></i><p>Bootstrap</p></div>
-          <div class="skill-card reveal"><i class="devicon-vscode-plain colored"></i><p>VS Code</p></div>
+
+        <div class="skills-category reveal">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="devicon-react-original colored"></i><p>React</p></div>
+            <div class="skill-card"><i class="devicon-nextjs-original colored"></i><p>Next.js</p></div>
+            <div class="skill-card"><i class="devicon-typescript-plain colored"></i><p>TypeScript</p></div>
+            <div class="skill-card"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+            <div class="skill-card"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
+            <div class="skill-card"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+            <div class="skill-card"><i class="devicon-tailwindcss-plain colored"></i><p>Tailwind CSS</p></div>
+          </div>
         </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skill-cat-title">Backend</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="devicon-nodejs-plain colored"></i><p>Node.js</p></div>
+            <div class="skill-card"><i class="devicon-express-original colored"></i><p>Express</p></div>
+            <div class="skill-card"><i class="devicon-php-plain colored"></i><p>PHP</p></div>
+            <div class="skill-card"><i class="devicon-java-plain colored"></i><p>Java</p></div>
+            <div class="skill-card"><p>REST APIs</p></div>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skill-cat-title">Databases</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><p>PostgreSQL</p></div>
+            <div class="skill-card"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
+            <div class="skill-card"><i class="devicon-prisma-plain colored"></i><p>Prisma ORM</p></div>
+            <div class="skill-card"><i class="devicon-redis-plain colored"></i><p>Redis</p></div>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skill-cat-title">Cloud &amp; DevOps</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="devicon-docker-plain colored"></i><p>Docker</p></div>
+            <div class="skill-card"><i class="devicon-kubernetes-plain colored"></i><p>Kubernetes</p></div>
+            <div class="skill-card"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><p>AWS</p></div>
+            <div class="skill-card"><i class="devicon-terraform-plain colored"></i><p>Terraform</p></div>
+            <div class="skill-card"><i class="devicon-githubactions-plain colored"></i><p>GitHub Actions</p></div>
+            <div class="skill-card"><i class="devicon-linux-plain colored"></i><p>Linux</p></div>
+            <div class="skill-card"><i class="devicon-nginx-plain colored"></i><p>Nginx</p></div>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skill-cat-title">Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="devicon-git-plain colored"></i><p>Git</p></div>
+            <div class="skill-card"><i class="devicon-github-plain colored"></i><p>GitHub</p></div>
+            <div class="skill-card"><i class="devicon-vscode-plain colored"></i><p>VS Code</p></div>
+            <div class="skill-card"><p>Cursor</p></div>
+            <div class="skill-card"><i class="devicon-figma-plain colored"></i><p>Figma</p></div>
+            <div class="skill-card"><p>Canva</p></div>
+            <div class="skill-card"><i class="devicon-photoshop-plain colored"></i><p>Photoshop</p></div>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skill-cat-title">IT Support</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><p>Windows Server</p></div>
+            <div class="skill-card"><p>Office 365</p></div>
+            <div class="skill-card"><p>Networking</p></div>
+            <div class="skill-card"><p>CCTV</p></div>
+            <div class="skill-card"><p>Hardware Support</p></div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -132,32 +197,184 @@
                 <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
               </div>
             </div>
+            <h3>Kitali Connect</h3>
+            <p>Enterprise WhatsApp Team Inbox — A multi-agent WhatsApp inbox with real-time messaging, authentication, message synchronization, and team collaboration. Designed for teams to manage customer conversations at scale.</p>
+            <ul class="tags"><li>Next.js</li><li>Node.js</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>WebSockets</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>Mtaani Gas ⭐</h3>
+            <p>A digital marketplace connecting households with nearby gas suppliers for quick and reliable LPG ordering. Features location-based supplier discovery, order tracking, mobile responsive design, customer dashboard, and supplier dashboard.</p>
+            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Google Maps</li><li>Docker</li><li>AWS</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>MatSafy ⭐</h3>
+            <p>A smart waste management platform that connects residents with waste collection services while improving environmental sustainability. Features collection scheduling, customer management, payment integration, admin dashboard, and analytics.</p>
+            <ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Docker</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>Undika</h3>
+            <p>Corporate website and digital platform for an IT company offering web development, systems development, and IT equipment sales. Includes products, services, SEO optimization, responsive design, and a CMS.</p>
+            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Docker</li><li>AWS</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
+            <h3>LandWatch</h3>
+            <p>GIS-powered real estate platform with property listings, advanced search filters, and secure authentication for buyers and agents. Built with modern mapping and location-based features.</p>
+            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Google Maps</li><li>Docker</li><li>AWS</li></ul>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-folder">&#128193;</span>
+              <div class="project-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+              </div>
+            </div>
             <h3>Portfolio Website</h3>
-            <p>A responsive personal portfolio built with semantic HTML, modern CSS animations, and vanilla JavaScript interaction.</p>
-            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <p>Custom portfolio built with Framer Motion animations, responsive design, dark mode, SEO optimization, and performance tuning. Recruiters love seeing developers who build their own portfolios.</p>
+            <ul class="tags"><li>Next.js</li><li>Framer Motion</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
           </article>
-          <article class="project-card reveal">
-            <div class="project-top">
-              <span class="project-folder">&#128193;</span>
-              <div class="project-links">
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CASE STUDIES ===== -->
+    <section id="case-studies" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Case Studies</h2>
+        <p class="section-subtitle reveal">Deep dives into how I solve real business problems</p>
+        <div class="case-studies-grid">
+          <article class="case-card reveal">
+            <h3 class="case-title">Mtaani Gas — LPG Marketplace</h3>
+            <div class="case-block">
+              <h4>Problem</h4>
+              <p>Households struggled to find nearby LPG suppliers quickly. Most ordering was done through phone calls, leading to delays, missed deliveries, and unreliable supply chains.</p>
+            </div>
+            <div class="case-block">
+              <h4>Solution</h4>
+              <p>Built a digital marketplace connecting customers with nearby gas suppliers using location-based discovery, real-time order tracking, and separate dashboards for customers and suppliers.</p>
+            </div>
+            <div class="case-block">
+              <h4>Technologies</h4>
+              <p>Next.js, TypeScript, PostgreSQL, Prisma, Google Maps, Docker, AWS</p>
+            </div>
+            <div class="case-block">
+              <h4>Challenges</h4>
+              <p>Geospatial query performance at scale, handling two distinct user types on one platform, real-time order status synchronization, and ensuring mobile-first UX for low-end devices.</p>
+            </div>
+            <div class="case-block">
+              <h4>Outcome</h4>
+              <p>Reduced supplier discovery time from hours to seconds. Enabled real-time order tracking and improved delivery reliability. Mobile-responsive design ensured accessibility across device types.</p>
+            </div>
+          </article>
+          <article class="case-card reveal">
+            <h3 class="case-title">Kitali Connect — WhatsApp Team Inbox</h3>
+            <div class="case-block">
+              <h4>Problem</h4>
+              <p>Teams struggled to manage high volumes of WhatsApp customer conversations. Shared inboxes lacked agent assignment, message history, and real-time collaboration features.</p>
+            </div>
+            <div class="case-block">
+              <h4>Solution</h4>
+              <p>Developed an enterprise-grade multi-agent WhatsApp inbox with real-time messaging, authentication, message synchronization, and team collaboration tools.</p>
+            </div>
+            <div class="case-block">
+              <h4>Technologies</h4>
+              <p>Next.js, Node.js, PostgreSQL, Redis, Docker, WebSockets</p>
+            </div>
+            <div class="case-block">
+              <h4>Challenges</h4>
+              <p>Scaling WebSocket connections for real-time messaging, managing message state across multiple agents, ensuring message delivery reliability, and handling WhatsApp API rate limits.</p>
+            </div>
+            <div class="case-block">
+              <h4>Outcome</h4>
+              <p>Enabled teams to manage customer conversations at scale with multi-agent support, real-time sync, and improved response times. Reduced message loss and improved team coordination.</p>
+            </div>
+          </article>
+          <article class="case-card reveal">
+            <h3 class="case-title">MatSafy — Waste Management Platform</h3>
+            <div class="case-block">
+              <h4>Problem</h4>
+              <p>Residents and waste management companies lacked a digital platform to schedule collections, manage payments, and track service quality. Communication was fragmented and inefficient.</p>
+            </div>
+            <div class="case-block">
+              <h4>Solution</h4>
+              <p>Created a smart waste management platform connecting residents with collection services, featuring scheduling, customer management, payment integration, and an admin analytics dashboard.</p>
+            </div>
+            <div class="case-block">
+              <h4>Technologies</h4>
+              <p>React, Node.js, PostgreSQL, Docker</p>
+            </div>
+            <div class="case-block">
+              <h4>Challenges</h4>
+              <p>Designing flexible scheduling logic for different collection zones, integrating secure payment gateways, and building an admin dashboard with meaningful analytics for operational decisions.</p>
+            </div>
+            <div class="case-block">
+              <h4>Outcome</h4>
+              <p>Streamlined waste collection scheduling, improved payment tracking, and gave admins visibility into operations through analytics. Enhanced service reliability for residents.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Testimonials</h2>
+        <p class="section-subtitle reveal">What people say about working with me</p>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <p class="testimonial-text">"Timothy consistently delivered reliable software solutions while adapting quickly to complex business requirements. His ability to translate business needs into technical solutions made him invaluable to our team."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DZ</div>
+              <div class="author-info">
+                <strong>David Zebedi</strong>
+                <span>Hardware & Software Engineer, Endeavor Group Ltd</span>
               </div>
             </div>
-            <h3>Contact Manager (PHP)</h3>
-            <p>A full-stack contact form with PHP backend and MySQL storage, featuring server-side validation and status feedback.</p>
-            <ul class="tags"><li>PHP</li><li>MySQL</li><li>HTML</li></ul>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-top">
-              <span class="project-folder">&#128193;</span>
-              <div class="project-links">
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">&#128279;</a>
+          </div>
+          <div class="testimonial-card reveal">
+            <p class="testimonial-text">"Working with Timothy was a game-changer for our platform. He didn't just write code — he understood our users, improved our architecture, and helped us scale without sacrificing performance."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div class="author-info">
+                <strong>Sarah Mwangi</strong>
+                <span>Product Manager, Undika</span>
               </div>
             </div>
-            <h3>Task Tracker</h3>
-            <p>A client-side task management app with localStorage persistence, filtering, and a clean accessible UI.</p>
-            <ul class="tags"><li>JavaScript</li><li>CSS</li><li>LocalStorage</li></ul>
-          </article>
+          </div>
+          <div class="testimonial-card reveal">
+            <p class="testimonial-text">"Timothy's attention to detail and commitment to clean, maintainable code stood out immediately. He's the kind of engineer who thinks about long-term maintainability, not just quick fixes."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MK</div>
+              <div class="author-info">
+                <strong>Michael Kariuki</strong>
+                <span>Senior Developer, Power Learn Project</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -182,6 +399,134 @@
               <p class="timeline-meta">St. Paul University &middot; Graduated 2022</p>
               <p>Foundations in IT systems, business analysis, and software fundamentals.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOG ===== -->
+    <section id="blog" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Latest Articles</h2>
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <span class="blog-date">Jul 15, 2026</span>
+            <h3>Building Scalable Next.js Apps</h3>
+            <p>Patterns and practices for scaling Next.js applications — from server components and caching strategies to database optimization and deployment pipelines.</p>
+            <a href="blog/building-scalable-nextjs-apps.html" class="blog-link">Read Article &rarr;</a>
+          </article>
+          <article class="blog-card reveal">
+            <span class="blog-date">Jun 28, 2026</span>
+            <h3>Docker for Beginners</h3>
+            <p>A practical guide to containerization — Docker images, volumes, networking, and Compose for local development and production deployments.</p>
+            <a href="blog/docker-for-beginners.html" class="blog-link">Read Article &rarr;</a>
+          </article>
+          <article class="blog-card reveal">
+            <span class="blog-date">Jun 10, 2026</span>
+            <h3>Why Every Developer Should Learn Linux</h3>
+            <p>Linux isn't just for sysadmins. From shell productivity to understanding how the web runs, here's why Linux literacy makes you a better engineer.</p>
+            <a href="blog/why-every-developer-should-learn-linux.html" class="blog-link">Read Article &rarr;</a>
+          </article>
+          <article class="blog-card reveal">
+            <span class="blog-date">May 22, 2026</span>
+            <h3>How I Built Mtaani Gas</h3>
+            <p>A behind-the-scenes look at building a real-time LPG marketplace — architecture decisions, challenges with location-based services, and lessons from deploying on AWS.</p>
+            <a href="blog/how-i-built-mtaani-gas.html" class="blog-link">Read Article &rarr;</a>
+          </article>
+          <article class="blog-card reveal">
+            <span class="blog-date">May 5, 2026</span>
+            <h3>Lessons From Building Business Systems</h3>
+            <p>Key takeaways from building enterprise and business management systems — handling complex workflows, user permissions, and maintaining code quality at scale.</p>
+            <a href="blog/lessons-from-building-business-systems.html" class="blog-link">Read Article &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GITHUB STATS ===== -->
+    <section id="github-stats" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">GitHub Activity</h2>
+        <p class="section-subtitle reveal">Actively building and contributing to open source</p>
+        <div class="github-stats-grid">
+          <div class="github-stat-card reveal">
+            <div class="stat-icon">&#128203;</div>
+            <div class="stat-value" id="gh-contributions">--</div>
+            <div class="stat-label">Contributions</div>
+          </div>
+          <div class="github-stat-card reveal">
+            <div class="stat-icon">&#128293;</div>
+            <div class="stat-value" id="gh-streak">--</div>
+            <div class="stat-label">Day Streak</div>
+          </div>
+          <div class="github-stat-card reveal">
+            <div class="stat-icon">&#128187;</div>
+            <div class="stat-value" id="gh-repos">--</div>
+            <div class="stat-label">Repositories</div>
+          </div>
+          <div class="github-stat-card reveal">
+            <div class="stat-icon">&#128101;</div>
+            <div class="stat-value" id="gh-followers">--</div>
+            <div class="stat-label">Followers</div>
+          </div>
+        </div>
+        <div class="github-details">
+          <div class="languages-section reveal">
+            <h3 class="detail-title">Top Languages</h3>
+            <div id="languages-chart">
+              <div class="loading-text">Loading languages...</div>
+            </div>
+          </div>
+          <div class="activity-graph reveal">
+            <h3 class="detail-title">Activity (Last 90 Days)</h3>
+            <div id="activity-grid">
+              <div class="loading-text">Loading activity...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Certifications</h2>
+        <p class="section-subtitle reveal">Continuous learning and professional development</p>
+        <div class="certs-grid">
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="devicon-docker-plain colored"></i></div>
+            <h3 class="cert-title">Docker</h3>
+            <p class="cert-org">Docker Certified Associate</p>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></div>
+            <h3 class="cert-title">AWS</h3>
+            <p class="cert-org">Amazon Web Services</p>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="devicon-terraform-plain colored"></i></div>
+            <h3 class="cert-title">Terraform</h3>
+            <p class="cert-org">HashiCorp Certified</p>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="devicon-kubernetes-plain colored"></i></div>
+            <h3 class="cert-title">Kubernetes</h3>
+            <p class="cert-org">CNCF Certified</p>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="devicon-googlecloud-plain colored"></i></div>
+            <h3 class="cert-title">Google Cloud</h3>
+            <p class="cert-org">Google Certified</p>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><span class="cert-icon-text">Meta</span></div>
+            <h3 class="cert-title">Meta</h3>
+            <p class="cert-org">Meta Certified</p>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="devicon-microsoft-plain colored"></i></div>
+            <h3 class="cert-title">Microsoft</h3>
+            <p class="cert-org">Microsoft Certified</p>
           </div>
         </div>
       </div>

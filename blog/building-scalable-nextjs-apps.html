@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Timothy Gaius — Software Engineer & Developer building clean, scalable web applications." />
+  <title>Timothy Gaius | Software Engineer</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">Tim<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#case-studies" class="nav-link">Case Studies</a>
+        <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+        <a href="../index.html#blog" class="nav-link">Blog</a>
+        <a href="../index.html#github-stats" class="nav-link">GitHub</a>
+        <a href="../index.html#certifications" class="nav-link">Certifications</a>
+        <a href="../index.html#experience" class="nav-link">Experience</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a href="../index.html#blog" class="blog-back">&larr; Back to Articles</a>
+        <article class="blog-post">
+          <span class="blog-date">Jul 15, 2026</span>
+          <h1 class="blog-post-title">Building Scalable Next.js Apps</h1>
+          <div class="blog-post-meta">Next.js • Architecture • Performance</div>
+
+          <p>Next.js has become the default choice for many teams building production React applications. But as your application grows, the initial simplicity can hide architectural decisions that determine whether your app stays fast or gradually degrades under load.</p>
+
+          <h2>1. Embrace Server Components Early</h2>
+          <p>React Server Components (RSC) allow you to render components on the server without sending JavaScript to the client. This reduces bundle size and improves Time to Interactive (TTI). For data-heavy pages — dashboards, listings, documentation — moving data fetching to the server eliminates client-side waterfalls.</p>
+
+          <h2>2. Cache Aggressively, Invalidate Intentionally</h2>
+          <p>Next.js provides multiple caching layers: fetch caching, route segment cache, full route cache, and client-side router cache. The key is understanding what you're caching and for how long. Use <code>revalidate</code> for ISR on pages that update periodically, and <code>no-store</code> for highly dynamic data.</p>
+
+          <h2>3. Optimize Database Access</h2>
+          <p>A scalable Next.js app is only as fast as its database queries. Use Prisma or your ORM's query optimization features — select only the fields you need, use indexes strategically, and consider read replicas for high-traffic endpoints. Connection pooling with pgBouncer or PgCat can prevent connection exhaustion under load.</p>
+
+          <h2>4. Deploy Close to Your Users</h2>
+          <p>Vercel Edge Functions and Middleware let you run logic at the edge, reducing latency for global users. For server-side rendering, Edge Runtime is faster than Node.js Runtime but has API limitations. Choose the runtime based on your needs — not all pages need edge, and not all pages need Node.js.</p>
+
+          <h2>5. Monitor and Measure</h2>
+          <p>Use Next.js built-in analytics, Lighthouse CI in your pipeline, and APM tools like Datadog or New Relic. Set performance budgets and fail builds when they're exceeded. Metrics like LCP, FID, and CLS tell you more about user experience than bundle size alone.</p>
+
+          <p>Building scalable Next.js applications isn't about using every feature — it's about making intentional trade-offs between simplicity, performance, and maintainability as your user base grows.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by Timothy Gaius</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Tim Gaius. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="../main.js"></script>
+</body>
+</html>

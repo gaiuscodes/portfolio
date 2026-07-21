@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Timothy Gaius — Software Engineer & Developer building clean, scalable web applications." />
+  <title>Timothy Gaius | Software Engineer</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">Tim<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#case-studies" class="nav-link">Case Studies</a>
+        <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+        <a href="../index.html#blog" class="nav-link">Blog</a>
+        <a href="../index.html#github-stats" class="nav-link">GitHub</a>
+        <a href="../index.html#certifications" class="nav-link">Certifications</a>
+        <a href="../index.html#experience" class="nav-link">Experience</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a href="../index.html#blog" class="blog-back">&larr; Back to Articles</a>
+        <article class="blog-post">
+          <span class="blog-date">May 5, 2026</span>
+          <h1 class="blog-post-title">Lessons From Building Business Systems</h1>
+          <div class="blog-post-meta">Enterprise • Architecture • Best Practices</div>
+
+          <p>Building business management systems is fundamentally different from building consumer apps. Users have specific roles, workflows are rigid, and data integrity is non-negotiable. Here are the lessons I've learned from building enterprise and business systems.</p>
+
+          <h2>1. Model the Domain First</h2>
+          <p>Before writing a single line of code, understand the business domain. Talk to users, document workflows, and identify entities and relationships. A well-modeled domain prevents cascading changes later. Use domain-driven design principles — identify bounded contexts, aggregates, and value objects.</p>
+
+          <h2>2. Permissions Are Not an Afterthought</h2>
+          <p>Enterprise systems have complex permission models: roles, permissions, resource-level access, and field-level security. Build the authorization layer early and make it explicit. Don't scatter <code>if (user.isAdmin)</code> checks throughout your codebase — use middleware, guards, or policy objects.</p>
+
+          <h2>3. Audit Everything</h2>
+          <p>Business systems need audit trails. Who created this record? Who approved it? When was it modified? Build audit logging into your data model from day one. Soft deletes are also essential — you almost never want to permanently delete business data.</p>
+
+          <h2>4. Validation at Every Layer</h2>
+          <p>Client-side validation improves UX, but server-side validation protects data integrity. Database constraints enforce rules at the storage level. Use all three layers: validate inputs early, validate business rules in your service layer, and let the database enforce referential integrity.</p>
+
+          <h2>5. Complex Workflows Need State Machines</h2>
+          <p>Business processes have states: draft, pending approval, approved, rejected, published. Use state machines or workflow engines to model these transitions explicitly. This prevents invalid states and makes audit trails clear.</p>
+
+          <h2>6. Reporting Is a Feature</h2>
+          <p>Business users need reports. Design your data model with reporting in mind — include summary tables, materialized views, or analytics pipelines. Running complex aggregations on transactional data in production is a recipe for performance problems.</p>
+
+          <h2>7. Maintainability Over Cleverness</h2>
+          <p>Business systems live for years. The developer who maintains your code in three years will thank you for clarity over cleverness. Use explicit names, consistent patterns, and document business logic inline. The best code is code that a new team member can understand in a week.</p>
+
+          <p>Building business systems teaches you that software engineering is as much about understanding people and processes as it is about writing code. The best systems make complex work feel simple.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by Timothy Gaius</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Tim Gaius. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="../main.js"></script>
+</body>
+</html>

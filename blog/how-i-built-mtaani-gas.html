@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Timothy Gaius — Software Engineer & Developer building clean, scalable web applications." />
+  <title>Timothy Gaius | Software Engineer</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">Tim<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#case-studies" class="nav-link">Case Studies</a>
+        <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+        <a href="../index.html#blog" class="nav-link">Blog</a>
+        <a href="../index.html#github-stats" class="nav-link">GitHub</a>
+        <a href="../index.html#certifications" class="nav-link">Certifications</a>
+        <a href="../index.html#experience" class="nav-link">Experience</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a href="../index.html#blog" class="blog-back">&larr; Back to Articles</a>
+        <article class="blog-post">
+          <span class="blog-date">May 22, 2026</span>
+          <h1 class="blog-post-title">How I Built Mtaani Gas</h1>
+          <div class="blog-post-meta">Next.js • PostgreSQL • AWS • Case Study</div>
+
+          <p>Mtaani Gas is a digital marketplace connecting households with nearby LPG suppliers. Building it required solving real-world problems — location-based discovery, real-time order tracking, and managing two distinct user types on a single platform.</p>
+
+          <h2>The Problem</h2>
+          <p>Most households in Kenya still order gas through phone calls and word-of-mouth. Suppliers struggle with visibility, and customers struggle with availability. We needed a platform that would make discovery instant and ordering reliable.</p>
+
+          <h2>Architecture Decisions</h2>
+          <p>We chose Next.js for the frontend and API routes to keep the stack unified. PostgreSQL with Prisma gave us type-safe database access and easy relationship management between customers, suppliers, and orders. Redis handled session caching and real-time inventory updates.</p>
+
+          <h2>Location-Based Discovery</h2>
+          <p>The core feature was finding nearby suppliers. We integrated Google Maps API for geocoding and distance calculations. The challenge was performance — calculating distances for hundreds of suppliers on every search would be slow. We solved this with geospatial indexing in PostgreSQL using PostGIS, reducing lookup times from seconds to milliseconds.</p>
+
+          <h2>Real-Time Order Tracking</h2>
+          <p>Customers expect to see where their order is. We used WebSockets for live status updates — when a supplier accepts or dispatches an order, the customer sees it immediately. This required careful state management and handling connection drops gracefully.</p>
+
+          <h2>Deployment on AWS</h2>
+          <p>We containerized the application with Docker and deployed on AWS using ECS. PostgreSQL ran on RDS with automated backups, Redis on ElastiCache, and static assets on S3 with CloudFront CDN. The infrastructure-as-code approach with Terraform made environments reproducible.</p>
+
+          <h2>Lessons Learned</h2>
+          <p>Location-based features require more than just a map — they need careful data modeling, performance optimization, and edge case handling (what happens when a supplier's location isn't precise?). Mobile responsiveness was critical — most users access the platform from phones, not desktops. And finally, building for two user types (customers and suppliers) meant twice the UI complexity but also twice the value.</p>
+
+          <p>Mtaani Gas taught me that the best software solves problems people actually have, in ways they can actually use.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by Timothy Gaius</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Tim Gaius. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="../main.js"></script>
+</body>
+</html>

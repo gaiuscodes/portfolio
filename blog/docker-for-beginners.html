@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Timothy Gaius — Software Engineer & Developer building clean, scalable web applications." />
+  <title>Timothy Gaius | Software Engineer</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">Tim<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#case-studies" class="nav-link">Case Studies</a>
+        <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+        <a href="../index.html#blog" class="nav-link">Blog</a>
+        <a href="../index.html#github-stats" class="nav-link">GitHub</a>
+        <a href="../index.html#certifications" class="nav-link">Certifications</a>
+        <a href="../index.html#experience" class="nav-link">Experience</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a href="../index.html#blog" class="blog-back">&larr; Back to Articles</a>
+        <article class="blog-post">
+          <span class="blog-date">Jun 28, 2026</span>
+          <h1 class="blog-post-title">Docker for Beginners</h1>
+          <div class="blog-post-meta">DevOps • Containers • Deployment</div>
+
+          <p>If you've ever heard "it works on my machine," you already understand why Docker exists. Containers package your application and its dependencies into a single unit that runs consistently across development, staging, and production.</p>
+
+          <h2>What is a Container?</h2>
+          <p>A container is a lightweight, standalone, executable package that includes everything needed to run a piece of software: the code, runtime, system tools, libraries, and settings. Unlike virtual machines, containers share the host OS kernel, making them faster to start and more resource-efficient.</p>
+
+          <h2>Core Concepts</h2>
+          <p><strong>Images</strong> are read-only templates. <strong>Containers</strong are running instances of images. A <code>Dockerfile</code> defines how to build an image — starting from a base image, copying files, installing dependencies, and exposing ports.</p>
+
+          <h2>A Simple Dockerfile</h2>
+          <pre><code>FROM node:20-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["npm", "start"]</code></pre>
+
+          <p>This 6-line file gives you a reproducible, portable application environment. Anyone with Docker can run it in seconds.</p>
+
+          <h2>Volumes and Networks</h2>
+          <p>Volumes persist data between container restarts — essential for databases. Networks allow containers to communicate. Docker Compose lets you define multi-container applications in a single YAML file, making local development with databases, caches, and services trivial.</p>
+
+          <h2>Docker in Production</h2>
+          <p>In production, orchestration tools like Kubernetes manage container lifecycle, scaling, and networking. But even without orchestration, Docker simplifies deployment — build once, run anywhere. Combined with CI/CD pipelines, Docker ensures your production environment matches your development environment exactly.</p>
+
+          <p>Start with Docker Compose for local development, learn to write efficient Dockerfiles, and gradually explore orchestration. Containerization is a foundational skill for modern DevOps.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by Timothy Gaius</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Tim Gaius. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="../main.js"></script>
+</body>
+</html>
