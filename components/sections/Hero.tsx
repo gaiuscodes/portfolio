@@ -66,7 +66,30 @@ export default function Hero() {
           </a>
         </motion.div>
         <motion.div
-          className="flex gap-6 justify-center mt-10"
+          className="flex flex-wrap gap-4 justify-center mt-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
+          <a
+            href="tel:+254746058590"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-surface border border-surface-border rounded-full text-text hover:border-accent hover:text-accent transition-all duration-300"
+          >
+            <span>📱</span>
+            +254 746 058 590
+          </a>
+          <a
+            href="https://wa.me/254746058590"
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] text-white rounded-full hover:shadow-lg hover:shadow-[#25D366]/30 transition-all duration-300"
+          >
+            <span>💬</span>
+            WhatsApp
+          </a>
+        </motion.div>
+        <motion.div
+          className="flex gap-6 justify-center mt-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
@@ -77,7 +100,7 @@ export default function Hero() {
           <a href="https://www.linkedin.com/in/timothy-gaius-odhiambo-a36011346" target="_blank" rel="noopener" className="text-text-dim hover:text-accent transition-colors">
             LinkedIn
           </a>
-          <a href="mailto:your.email@example.com" className="text-text-dim hover:text-accent transition-colors">
+          <a href="mailto:mrtimothyodhiambo@gmail.com" className="text-text-dim hover:text-accent transition-colors">
             Email
           </a>
         </motion.div>

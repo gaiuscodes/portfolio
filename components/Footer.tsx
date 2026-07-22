@@ -14,8 +14,14 @@ export default function Footer() {
           <Link href="https://www.linkedin.com/in/timothy-gaius-odhiambo-a36011346" target="_blank" rel="noopener" className="text-text-dim hover:text-accent transition-colors text-sm">
             LinkedIn
           </Link>
-          <Link href="mailto:your.email@example.com" className="text-text-dim hover:text-accent transition-colors text-sm">
+          <Link href="mailto:mrtimothyodhiambo@gmail.com" className="text-text-dim hover:text-accent transition-colors text-sm">
             Email
+          </Link>
+          <Link href="tel:+254746058590" className="text-text-dim hover:text-accent transition-colors text-sm">
+            Phone
+          </Link>
+          <Link href="https://wa.me/254746058590" target="_blank" rel="noopener" className="text-text-dim hover:text-accent transition-colors text-sm">
+            WhatsApp
           </Link>
         </div>
         <p className="text-text-dim text-sm">
