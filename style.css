@@ -420,8 +420,8 @@ a:hover { color: var(--accent-2); }
 .stat-value { font-size: 2.2rem; font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 6px; }
 .stat-label { color: var(--text-dim); font-size: 0.9rem; font-weight: 600; }
 
-.github-details { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-.languages-section, .activity-graph {
+.github-details { display: grid; grid-template-columns: 1fr; gap: 32px; }
+.languages-section {
   background: var(--surface);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius);
@@ -437,9 +437,6 @@ a:hover { color: var(--accent-2); }
 .language-track { background: rgba(255, 255, 255, 0.06); border-radius: 999px; height: 8px; overflow: hidden; }
 .language-fill { background: var(--accent); height: 100%; border-radius: 999px; transition: width 0.6s ease; }
 
-.activity-grid { display: flex; flex-wrap: wrap; gap: 4px; }
-.activity-dot { width: 12px; height: 12px; border-radius: 3px; background: rgba(255, 255, 255, 0.06); transition: background 0.2s ease; }
-.activity-dot.active { background: var(--accent); }
 .loading-text { color: var(--text-dim); font-size: 0.9rem; text-align: center; padding: 20px; }
 
 /* ===== CERTIFICATIONS ===== */
