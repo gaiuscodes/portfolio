@@ -15,7 +15,6 @@ export default function Navbar() {
     { href: '#case-studies', label: 'Case Studies' },
     { href: '#testimonials', label: 'Testimonials' },
     { href: '#blog', label: 'Blog' },
-    { href: '#github-stats', label: 'GitHub' },
     { href: '#certifications', label: 'Certifications' },
     { href: '#experience', label: 'Experience' },
     { href: '#contact', label: 'Contact' },
