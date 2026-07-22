@@ -569,6 +569,8 @@ a:hover { color: var(--accent-2); }
   .photo-frame { margin: 0 auto; }
   .stats { justify-content: center; }
   .github-details { grid-template-columns: 1fr; }
+  .nav-right { margin-left: 12px; }
+  [data-theme="light"] .nav-links { background: rgba(248, 250, 252, 0.97); }
 }
 
 /* Respect reduced motion */
@@ -576,3 +578,46 @@ a:hover { color: var(--accent-2); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ===== LIGHT THEME ===== */
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --bg-soft: #ffffff;
+  --surface: rgba(15, 23, 42, 0.04);
+  --surface-border: rgba(15, 23, 42, 0.10);
+  --text: #0f172a;
+  --text-dim: #475569;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .navbar { background: rgba(248, 250, 252, 0.85); border-bottom-color: var(--surface-border); }
+[data-theme="light"] .navbar.scrolled { background: rgba(248, 250, 252, 0.95); }
+[data-theme="light"] .nav-links { background: rgba(248, 250, 252, 0.97); }
+
+[data-theme="light"] .hero { background: radial-gradient(ellipse at top, #e0e7ff, #f8fafc 60%); }
+
+[data-theme="light"] .project-card::before,
+[data-theme="light"] .blog-card::before,
+[data-theme="light"] .case-card::before,
+[data-theme="light"] .testimonial-card::before,
+[data-theme="light"] .github-stat-card::before,
+[data-theme="light"] .cert-card::before {
+  background: radial-gradient(circle at top right, rgba(45, 212, 191, 0.18), transparent 60%);
+}
+
+[data-theme="light"] .blog-post pre { background: #f1f5f9; border-color: rgba(15,23,42,0.10); }
+[data-theme="light"] .modal-content { background: var(--bg); border-color: var(--surface-border); }
+
+[data-theme="light"] .blog-link,
+[data-theme="light"] .blog-back { color: var(--accent); }
+
+/* ===== THEME TOGGLE ===== */
+.theme-toggle {
+  background: none; border: none; cursor: pointer;
+  color: var(--text); font-size: 1.2rem;
+  padding: 8px; border-radius: 8px;
+  transition: background 0.25s ease, transform 0.25s ease;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.theme-toggle:hover { background: var(--surface); transform: translateY(-1px); }
+.nav-right { display: flex; align-items: center; gap: 18px; }
