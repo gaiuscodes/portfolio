@@ -360,14 +360,14 @@
 
   /* ---- Mobile Carousels ---- */
   const PER_VIEW = {
-    '.skills-grid': 3,
+    '.skills-grid': 2,
     '.projects-grid': 2,
     '.case-studies-grid': 2,
     '.testimonials-grid': 2,
     '.blog-grid': 2,
-    '.certs-grid': 3,
+    '.certs-grid': 2,
     '.modal-projects-grid': 2,
-    '.github-stats-grid': 3
+    '.github-stats-grid': 2
   };
 
   function initCarousels() {

@@ -1419,7 +1419,7 @@ a:hover { color: var(--accent-2); }
 
 
 
-  .testimonial-card { justify-content: center; align-items: center; text-align: center; }
+  .testimonial-card { justify-content: center; align-items: center; text-align: center; aspect-ratio: 1; overflow: hidden; }
 
   .testimonial-card .testimonial-text {
 
@@ -1449,11 +1449,11 @@ a:hover { color: var(--accent-2); }
 
 
 
-  .project-card { display: flex; flex-direction: column; }
+  .project-card { display: flex; flex-direction: column; aspect-ratio: 1; overflow: hidden; }
 
   .project-card .project-top { display: none; }
 
-  .project-card .project-image { height: 55%; margin-bottom: 0; border-radius: 0; }
+  .project-card .project-image { height: 50%; margin-bottom: 0; border-radius: 0; object-fit: cover; }
 
   .project-card h3 { font-size: 0.95rem; padding: 12px 14px 0; margin-bottom: 0; }
   font-family: var(--font-heading);
@@ -1480,7 +1480,7 @@ a:hover { color: var(--accent-2); }
 
 
 
-  .blog-card { display: flex; flex-direction: column; justify-content: center; }
+  .blog-card { display: flex; flex-direction: column; justify-content: center; aspect-ratio: 1; overflow: hidden; }
 
   .blog-card .blog-date { display: none; }
 
@@ -1509,7 +1509,7 @@ a:hover { color: var(--accent-2); }
 
 
 
-  .case-card { display: flex; flex-direction: column; justify-content: center; }
+  .case-card { display: flex; flex-direction: column; justify-content: center; aspect-ratio: 1; overflow: hidden; }
 
   .case-card .case-title { font-size: 1rem; margin-bottom: 0; }
 
@@ -1531,7 +1531,7 @@ a:hover { color: var(--accent-2); }
 
 
 
-  .cert-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+  .cert-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; aspect-ratio: 1; overflow: hidden; }
 
   .cert-card .cert-icon { font-size: 2rem; margin-bottom: 0; }
 
@@ -1551,7 +1551,7 @@ a:hover { color: var(--accent-2); }
 
 
 
-  .skill-card { height: auto; padding: 16px 10px; }
+  .skill-card { height: auto; padding: 16px 10px; aspect-ratio: 1; overflow: hidden; }
 
   .skill-card i { font-size: 2rem; margin-bottom: 8px; }
 
