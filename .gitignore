@@ -1,3 +1,4 @@
 .vercel
 node_modules
 images_orig
+images/background*.png
