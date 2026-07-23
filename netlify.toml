@@ -1,0 +1,7 @@
+[build]
+  command = ""
+  publish = "."
+  functions = ""
+
+[build.environment]
+  NODE_ENV = "none"
